@@ -73,8 +73,11 @@ class _AboutusState extends State<Aboutus> {
             // ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).push((MaterialPageRoute(
-                    builder: (context) => const term_of_use())));
+                Navigator.of(context).push(
+                  (MaterialPageRoute(
+                    builder: (context) => const term_of_use(),
+                  )),
+                );
               },
               child: const Text(
                 'Terms of Use',
