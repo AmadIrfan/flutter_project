@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "184455833230",
+    "project_id": "cricket-app-e9a76",
+    "storage_bucket": "cricket-app-e9a76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184455833230:android:4ed6ec6574ae4363c78bdf",
+        "android_client_info": {
+          "package_name": "com.example.cricket_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3emSWxgIJ4Ds1Y3OHJyMj-AQsQnXbnEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
