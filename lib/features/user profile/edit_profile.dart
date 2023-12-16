@@ -34,9 +34,9 @@ class _EditprofileState extends State<Editprofile> {
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  TextEditingController _displayname = TextEditingController();
-  TextEditingController _countryname = TextEditingController();
-  TextEditingController _cityname = TextEditingController();
+  final TextEditingController _displayname = TextEditingController();
+  final TextEditingController _countryname = TextEditingController();
+  final TextEditingController _cityname = TextEditingController();
 
   String currentuserid = '';
 
@@ -96,6 +96,7 @@ class _EditprofileState extends State<Editprofile> {
   @override
   Widget build(BuildContext context) {
     final ProfileController _profilecontroller = Get.put(ProfileController());
+    print(widget.userData.UserImage.toString());
     return WillPopScope(
       onWillPop: () async {
         if (widget.isedit) {
@@ -189,8 +190,12 @@ class _EditprofileState extends State<Editprofile> {
                         )
                       : CircleAvatar(
                           radius: 50.0,
-                          foregroundImage: CachedNetworkImageProvider(
-                              widget.userData.UserImage.toString()),
+                          foregroundImage:
+                              widget.userData.UserImage.toString().isEmpty
+                                  ? null
+                                  : CachedNetworkImageProvider(
+                                      widget.userData.UserImage.toString(),
+                                    ),
                           child: Icon(
                             Icons.person,
                             size: 80.0,

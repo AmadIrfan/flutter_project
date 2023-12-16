@@ -54,7 +54,6 @@ class AuthController extends GetxController {
           // _email.clear();
           // _password.clear();
         } else {
-          print('here1');
           Get.to(
             Editprofile(
               isedit: false,

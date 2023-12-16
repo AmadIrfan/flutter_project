@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '/features/about/team_scorer.dart';
 import '/features/about/term_of_use.dart';
 
 class Aboutus extends StatefulWidget {

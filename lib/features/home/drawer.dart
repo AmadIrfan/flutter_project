@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import '/features/Teams/teams.dart';
 import '/features/about/about.dart';
 import '/features/about/team_scorer.dart';
@@ -29,10 +31,10 @@ import '../../constants.dart';
 // }
 
 class customdrawertile extends StatelessWidget {
+  customdrawertile(this.title, this.leading, this.onpressed);
   final String title;
   final IconData leading;
   final VoidCallback onpressed;
-  customdrawertile(this.title, this.leading, this.onpressed);
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -194,7 +196,7 @@ class MyDrawer extends StatelessWidget {
                   'About',
                   Icons.info_outline,
                   () {
-                    Get.to(() => Aboutus());
+                    Get.to(() => const Aboutus());
                   },
                 ),
               ],
